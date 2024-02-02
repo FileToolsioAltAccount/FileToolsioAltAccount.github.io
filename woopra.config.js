@@ -3,13 +3,13 @@
 !function() {
     var windowObj = window,
         documentObj = document,
-        scriptTag = "script",
+        scriptTag = 'script',
         argumentsList = arguments,
         scriptAttributes = {
             async: 1,
-            src: "https://static.woopra.com/js/w.js"
+            src: 'https://static.woopra.com/js/w.js'
         },
-        methodList = ["call", "cancelAction", "config", "identify", "push", "track", "trackClick", "trackForm", "update", "visit"],
+        methodList = ['call', 'cancelAction', 'config', 'identify', 'push', 'track', 'trackClick', 'trackForm', 'update', 'visit'],
         woopraInstance = function() {
             var self = this,
                 createMethod = function(method) {
@@ -39,10 +39,10 @@
     }
 
     firstScriptTag.parentNode.insertBefore(scriptElement, firstScriptTag);
-}("woopra");
+}('woopra');
 
 woopra.config({
-    domain: "curly-guide-7vvwj5jv7vqx3pqgv-5173.app.github.dev",
+    domain: 'curly-guide-7vvwj5jv7vqx3pqgv-5173.app.github.dev',
     outgoing_tracking: true,
     download_tracking: true,
     click_tracking: true
