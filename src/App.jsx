@@ -1,24 +1,19 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Nav from './components/jsx/nav';
 
 function App() {
-    useEffect(() => {
-        function checkOnlineStatus() {
-            if (navigator.onLine) {
-                console.log("You are online");
-            } else {
-                console.log("You are offline");
-            }
-        }
+    const [online, setOnline] = useState(navigator.onLine);
 
-        // Initial check
+    useEffect(() => {
+        const checkOnlineStatus = () => {
+            setOnline(navigator.onLine);
+        };
+
         checkOnlineStatus();
 
-        // Event listener for online/offline events
         window.addEventListener('online', checkOnlineStatus);
         window.addEventListener('offline', checkOnlineStatus);
 
-        // Cleanup: remove event listeners when the component is unmounted
         return () => {
             window.removeEventListener('online', checkOnlineStatus);
             window.removeEventListener('offline', checkOnlineStatus);
@@ -27,7 +22,13 @@ function App() {
 
     return (
         <>
-            <Nav />
+            {online ? (
+                <Nav />
+            ) : (
+                <div>
+                    <p>You are currently offline. Please check your internet connection.</p>
+                </div>
+            )}
         </>
     );
 }
