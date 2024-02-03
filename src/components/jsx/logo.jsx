@@ -1,14 +1,24 @@
+import React from 'react';
 import logo from '../../public/logo.png';
 import '../css/logo.css';
-import React from 'react';
 
 function Logo() {
-        return (
-            <>
-               <img className='logo' src={logo} width='183.9px' height='27.9px' />
-            </>
-        );
-     }
-     
+    const redirectToHome = () => {
+        window.location.href = '/';
+    };
+
+    return (
+        <>
+            <img
+                className='logo'
+                src={logo}
+                width='183.9px'
+                height='27.9px'
+                alt='Logo'
+                onClick={redirectToHome}
+            />
+        </>
+    );
+}
+
 export default Logo;
-     
