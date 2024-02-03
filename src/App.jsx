@@ -1,10 +1,13 @@
-import React from 'react';
-import Nav from './homepage/jsx/Nav';
+import React, { useState, useEffect, useRef } from 'react';
+import './App.css';
+import Nav from './components/jsx/nav';
 
-export default function App() {
-    return (
-        <>
-            <Nav />
-        </>
-    );
+function App() {
+   return (
+       <>
+           <Nav />
+       </>
+   );
 }
+
+export default App;
