@@ -1,3 +1,8 @@
+/*
+WARNING —— DO NOT EDIT SCRIPT
+Script consists of connection to analytics
+*/
+
 'use strict';
 
 !function() {
@@ -10,10 +15,10 @@
             src: 'https://static.woopra.com/js/w.js'
         },
         methodList = ['call', 'cancelAction', 'config', 'identify', 'push', 'track', 'trackClick', 'trackForm', 'update', 'visit'],
-        woopraInstance = function() {
+        woopraInstance = () => {
             var self = this,
-                createMethod = function(method) {
-                    self[method] = function() {
+                createMethod = method => {
+                    self[method] = () => {
                         return self._e.push([method].concat(Array.prototype.slice.call(arguments, 0))), self;
                     };
                 };
