@@ -4,7 +4,11 @@ import '../css/logo.css';
 
 function Logo() {
     const redirectToHome = () => {
-        window.location.href = '/';
+         try {
+            window.location.href = '/';
+         } catch (error) {
+            alert('An error occured.');
+         }
     };
 
     return (
