@@ -15,10 +15,10 @@ Script consists of connection to analytics
             src: 'https://static.woopra.com/js/w.js'
         },
         methodList = ['call', 'cancelAction', 'config', 'identify', 'push', 'track', 'trackClick', 'trackForm', 'update', 'visit'],
-        woopraInstance = () => {
+        woopraInstance = function() {
             var self = this,
-                createMethod = method => {
-                    self[method] = () => {
+                createMethod = function(method) {
+                    self[method] = function() {
                         return self._e.push([method].concat(Array.prototype.slice.call(arguments, 0))), self;
                     };
                 };
