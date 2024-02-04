@@ -4,3 +4,5 @@ img.logo {
         vertical-align: middle;
         align-self: center;
 }
+
+img.logo:hover { cursor: pointer; }

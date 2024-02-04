@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from '../../public/logo.png';
+import logo from '../../../public/logo.png';
 import '../css/logo.css';
 
 function Logo() {
     const redirectToHome = () => {
          try {
-            window.location.href = '/';
+            window.location.href = 'https://curly-guide-7vvwj5jv7vqx3pqgv-5173.app.github.dev';
          } catch (error) {
             alert('An error occured.');
          }
