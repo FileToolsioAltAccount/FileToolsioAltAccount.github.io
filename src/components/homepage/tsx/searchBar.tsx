@@ -1,5 +1,5 @@
 import '../css/searchBar.css';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function SearchBar() {
    const [placeholder, setPlaceholder] = useState('');

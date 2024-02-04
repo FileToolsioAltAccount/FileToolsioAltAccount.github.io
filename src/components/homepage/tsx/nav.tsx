@@ -1,5 +1,4 @@
 import '../css/nav.css';
-import React from 'react';
 import Logo from './logo.tsx';
 import SearchBar from './searchBar.tsx';
 
