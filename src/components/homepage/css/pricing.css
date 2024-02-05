@@ -1,0 +1,14 @@
+p.pricing {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 13.3px;
+    margin-top: 21.25px;
+    margin-left: 55px;
+}
+
+p.pricing:hover {
+    color: #4776da;
+    margin-left: 54.9px;
+    cursor: pointer;
+    font-size: 13.4px;
+}
