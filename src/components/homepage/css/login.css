@@ -1,0 +1,13 @@
+p.login {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 13.3px;
+    margin-top: 21.25px;
+    margin-left: 5.5%;
+}
+
+p.login:hover {
+    color: #4776da;
+    cursor: pointer;
+    font-size: 13.4px;
+}
