@@ -1,9 +1,12 @@
-import Nav from './components/homepage/tsx/nav.tsx';
+import { Suspense } from 'react';
+import Nav from './components/homepage/tsx/nav';
 
 function App() {
     return (
         <>
-            <Nav />
+            <Suspense fallback={<div>Loading...</div>}>
+                <Nav />
+            </Suspense>
         </>
     );
 }
