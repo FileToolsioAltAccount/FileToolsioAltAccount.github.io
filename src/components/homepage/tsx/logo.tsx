@@ -13,7 +13,6 @@ function Logo() {
     return (
         <img
             draggable='false'
-            rel='preload'
             className='logo'
             src={logo}
             width='183.9px'
