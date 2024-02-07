@@ -1,4 +1,6 @@
-function Logo() {
+import './../css/login.css';
+
+function Login() {
     return (
         <>
             <p className='login'>Login</p>
@@ -6,4 +8,4 @@ function Logo() {
     )
 }
 
-export default Logo
+export default Login;

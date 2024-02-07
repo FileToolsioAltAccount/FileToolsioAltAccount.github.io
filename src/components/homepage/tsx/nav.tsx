@@ -3,6 +3,7 @@ import Advertise from './advertise.tsx';
 import Pricing from './pricing.tsx';
 import Logo from './logo.tsx';
 import SearchBar from './searchBar.tsx';
+import Login from './login.tsx';
 
 function Nav() {
         return (
@@ -12,6 +13,7 @@ function Nav() {
                         <SearchBar />
                         <Pricing />
                         <Advertise />
+                        <Login />
                 </nav>
             </>
         );
