@@ -2,11 +2,7 @@ img.logo {
     margin-left: 5%;
     vertical-align: middle;
     align-self: center;
-    -webkit-user-drag: none;
     user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
 }
 
 img.logo:hover { cursor: pointer; }
