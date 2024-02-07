@@ -13,7 +13,6 @@ function Logo() {
     return (
             <img
                 className='logo'
-                loading='lazy'
                 src={logo}
                 width='183.9px'
                 height='27.9px'
