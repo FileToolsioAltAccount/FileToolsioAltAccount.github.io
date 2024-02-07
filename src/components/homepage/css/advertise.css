@@ -3,13 +3,12 @@ p.advertise {
     color: white;
     font-size: 13.3px;
     margin-top: 21.25px;
-    margin-left: 60px;
+    margin-left: 5.5%;
     font-weight: 500;
 }
 
 p.advertise:hover {
     color: #4776da;
-    margin-left: 59.9px;
     cursor: pointer;
     font-size: 13.4px;
 }
