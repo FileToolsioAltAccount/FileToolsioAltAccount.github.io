@@ -9,7 +9,10 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "serve dist -p 8000",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "d": "yarn deploy",
+    "b": "yarn build",
+    "s": "yarn start"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
