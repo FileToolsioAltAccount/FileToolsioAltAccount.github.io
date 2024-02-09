@@ -15,8 +15,8 @@ function Logo() {
             draggable='false'
             className='logo'
             src={logo}
-            width={window.innerWidth / 7.42}
-            height={window.innerHeight / 28.35}
+            width={screen.width / 7.42}
+            height={screen.height / 28.35}
             alt='Logo'
             onClick={redirectToHomepage}
         />
