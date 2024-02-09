@@ -1,24 +1,20 @@
-import { Suspense, lazy } from 'react';
+import '../css/nav.css';
 import Advertise from './advertise.tsx';
 import Pricing from './pricing.tsx';
+import Logo from './logo.tsx';
 import SearchBar from './searchBar.tsx';
 import Login from './login.tsx';
-import '../css/nav.css';
-
-const Logo = lazy(() => import('./logo.tsx'));
 
 function Nav() {
         return (
             <>
-                <Suspense>
-                    <nav className='navbar'>
+               <nav className='navbar'>
                         <Logo />
                         <SearchBar />
                         <Pricing />
                         <Advertise />
                         <Login />
-                    </nav>
-                </Suspense>
+                </nav>
             </>
         );
      }
