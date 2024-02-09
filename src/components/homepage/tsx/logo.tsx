@@ -4,9 +4,9 @@ import '../css/logo.css'
 function Logo() {
     const redirectToHomepage = () => {
         try {
-            window.location.href = 'https://filetoolsioaltaccount.github.io'
+            window.location.href = 'https://filetoolsioaltaccount.github.io';
         } catch (error) {
-            alert('An error occurred.')
+            alert('An error occurred.');
         }
     }
 
@@ -15,12 +15,12 @@ function Logo() {
             draggable='false'
             className='logo'
             src={logo}
-            width='183.9px'
-            height='27.9px'
+            width={window.innerWidth / 7.42}
+            height={window.innerHeight / 28.35}
             alt='Logo'
             onClick={redirectToHomepage}
         />
     )
 }
 
-export default Logo
+export default Logo;
