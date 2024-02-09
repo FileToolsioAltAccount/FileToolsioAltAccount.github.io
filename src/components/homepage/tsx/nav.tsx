@@ -10,7 +10,7 @@ const Logo = lazy(() => import('./logo.tsx'));
 function Nav() {
         return (
             <>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense>
                     <nav className='navbar'>
                         <Logo />
                         <SearchBar />
