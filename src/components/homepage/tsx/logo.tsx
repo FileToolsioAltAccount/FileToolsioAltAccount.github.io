@@ -1,7 +1,10 @@
-import logo from '../../../public/logo.png'
-import '../css/logo.css'
+import React, { useState, useEffect } from 'react';
+import logo from '../../../public/logo.png';
+import '../css/logo.css';
 
-function Logo() {
+const Logo: React.FC = () => {
+    const [size, setSize] = useState<{ width: number, height: number } | null>(null);
+
     const redirectToHomepage = () => {
         try {
             window.location.href = 'https://filetoolsioaltaccount.github.io';
@@ -10,15 +13,29 @@ function Logo() {
         }
     }
 
+    useEffect(() => {
+        const img = new Image();
+        img.src = logo;
+        img.onload = () => {
+            setSize({ width: img.width /   2, height: img.height /   2 });
+        };
+    }, []);
+
+    if (!size) {
+        return null;
+    }
+
     return (
         <img
             draggable='false'
             className='logo'
             src={logo}
             alt='Logo'
+            width={size.width}
+            height={size.height}
             onClick={redirectToHomepage}
         />
-    )
+    );
 }
 
 export default Logo;
