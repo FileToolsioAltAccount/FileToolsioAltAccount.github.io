@@ -10,17 +10,14 @@ const Logo = () => {
         }
     };
 
-    const originalWidth = 262;
-    const originalHeight = 40;
-
     return (
         <img
             className='logo'
             src={logo}
             alt='Logo'
             style={{
-                width: `${originalWidth /   1.4}px`,
-                height: `${originalHeight /   1.4}px`
+                width: `${262 / 1.4}px`,
+                height: `${40 / 1.4}px`
             }}
             onClick={redirectToHomepage}
         />
