@@ -17,7 +17,7 @@ const Logo: React.FC = () => {
         const img = new Image();
         img.src = logo;
         img.onload = () => {
-            setSize({ width: img.width / 1.375, height: img.height / 1.375 });
+            setSize({ width: img.width / 1.4, height: img.height / 1.4 });
         };
     }, []);
 
